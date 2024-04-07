@@ -148,6 +148,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityInteface<E> 
      */
     @Override
     public E getFirst() {
+		if(data.isEmpty()) return null;
         return data.elementAt(0);
     }
 
